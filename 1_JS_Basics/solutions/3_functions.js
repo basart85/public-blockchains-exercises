@@ -33,6 +33,8 @@ function printSentence(name) {
 printSentence('Brendan');
 
 
+
+
 // b. Modify the printSentence function so that it takes an object of the
 // type you createed in the "Objects and loops" exercise and compose a
 // sentence using all the properties contained in the object. For instance:
@@ -157,13 +159,16 @@ console.log(privateVariableDollB); // Will throw an error.
 
 // Modify the functions dollA and dollB so that no errors are thrown.
 
+commonVariable = 0;
+
+
 function dollA() {
     // Without "let" privateVariableDollA is added into the global space.
     privateVariableDollA = 10;
     commonVariable += privateVariableDollA;
     console.log(privateVariableDollB); // Will throw an error.
 }
-
+commonVariable = 0;
 function dollB() {
     // Without "let" privateVariableDollB is added into the global space.
     privateVariableDollB = -10;
@@ -174,6 +179,9 @@ function dollB() {
 dollA();
 console.log(commonVariable);
 console.log(privateVariableDollA); // Will throw an error.
+
+
+
 dollB();
 console.log(commonVariable);
 console.log(privateVariableDollB); // Will throw an error.
@@ -191,6 +199,7 @@ console.log(privateVariableDollB); // Will throw an error.
 
 // a. Create a function that takes in input a person object and another
 // function and prints a string accordingly.
+brendan = { first: 'Brendan', last: 'Eich', year: 1961 };
 
 function isGreat() {
     return ' is great.';
@@ -220,6 +229,8 @@ judgePerson(brendan, isNotGreat);
 
 // Create a function that sorts the elements of the persons array from
 // youngest to older.
+brendan = { first: 'Brendan', last: 'Eich', year: 1961 };
+linus = { first: 'Linus', last: 'Torvalds', year: 1969 };
 persons = [ brendan, linus ];
 
 persons.sort(function(a, b) {

@@ -165,6 +165,7 @@ let variablesToCheck = [
 
 console.log('Num of variables in .env to check: ', variablesToCheck.length);
 
+process.exit(0);
 // exit();
 
 // c. Loop through all the elements of the array and check that the variable
