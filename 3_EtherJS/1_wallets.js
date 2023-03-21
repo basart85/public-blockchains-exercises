@@ -39,8 +39,11 @@
 // be executed, until you tell the process to stop. 
 
 // This line will tell the process to stop.
-process.exit(0);
+
 console.log('I am sad line...I will not be printed to console :(');
+
+process.exit(0);
+
 
 // a. Move the sad line above and below `process.exit(0);` to check that the
 // process stops where it is intended to. When you are done, comment out both

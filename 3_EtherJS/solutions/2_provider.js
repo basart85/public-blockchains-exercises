@@ -46,8 +46,10 @@ const ethers = require("ethers");
 const providerKey = process.env.INFURA_KEY;
 
 const mainnetInfuraUrl = `${process.env.INFURA_MAINNET}${providerKey}`;
-// console.log(mainnetInfuraUrl);
+console.log(mainnetInfuraUrl);
 const mainnetProvider = new ethers.JsonRpcProvider(mainnetInfuraUrl);
+console.log(mainnetProvider);
+//process.exit(0);
 
 // b. Verify that the network's name is "mainnet" and the chain id that theis 1.
 
@@ -77,7 +79,8 @@ const network = async () => {
 };
 
 // which you can then call:
-// network();
+network();
+//process.exit(0)
 
 // The second (less compact) notation has the advantage that we can invoke
 // the code only when needed, so it is preferred in this exercise sheet.

@@ -39,8 +39,11 @@
 // be executed, until you tell the process to stop. 
 
 // This line will tell the process to stop.
-// process.exit(0);
-// console.log('I am sad line...I will not be printed to console :(');
+
+
+//console.log('I am sad line...I will not be printed to console :(');
+//process.exit(0);
+
 
 // a. Move the sad line above and below `process.exit(0);` to check that the
 // process stops where it is intended to. When you are done, comment out both
@@ -129,7 +132,7 @@ exercise = 2;
 // See if it worked.
 console.log(process.env);
 
-// exit();
+//exit();
 
 // Exercise 3. Check the content of the .env file.
 //////////////////////////////////////////////////
@@ -148,7 +151,7 @@ if (privateKey === "") {
     console.log('Missing private key, fix your .env file');
 }
 
-// exit();
+//exit();
 
 // b. Create an array with all the names of the variables written in the .env
 // file. Then print the lenght of the array.
@@ -165,8 +168,8 @@ let variablesToCheck = [
 
 console.log('Num of variables in .env to check: ', variablesToCheck.length);
 
-process.exit(0);
-// exit();
+//process.exit(0);
+//exit();
 
 // c. Loop through all the elements of the array and check that the variable
 // is set and non-empty under `process.env`.
@@ -195,7 +198,7 @@ for (let index = 0; index < variablesToCheck.length; index++) {
 
 // Checkpoint. Is !process.env[v] equivalent to process.env[v] === "" ?
 
-// exit();
+//exit();
 
 
 // Exercise 4. Create a Random Wallet.
@@ -215,7 +218,7 @@ console.log("Private key:", wallet.privateKey);
 console.log("Mnemonic:", wallet.mnemonic.phrase);
 console.log();
 
-// exit();
+//exit();
 
 // b. Bonus. Print the derivation path of the wallet and check that it is
 // equal to `baseDevPath`. 
@@ -234,7 +237,7 @@ let baseDevPath = "m/44'/60'/0'/0/";
 
 console.log("Derivation path:", wallet.path);
 
-// exit();
+//exit();
 
 // Exercise 5. Bonus. Create a Hierarchical Deterministic Wallet.
 /////////////////////////////////////////////////////////////////

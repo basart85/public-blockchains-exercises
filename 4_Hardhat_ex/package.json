@@ -1,0 +1,24 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "1_hardhat.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "keywords"
+  ],
+  "author": "basar",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.13.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2"
+  }
+}
