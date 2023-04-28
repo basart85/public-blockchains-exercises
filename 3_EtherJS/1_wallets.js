@@ -16,7 +16,7 @@
 
 // Ethers JS:
 
-// -  https://docs.ethers.org/v6/
+// -  https://docs.exthers.org/v6/
 
 // There is also a crush course on JS fundamentals and asynchronous code 
 // under the local folders:

@@ -61,7 +61,7 @@ function exit() {
     process.exit(0);
     console.log('I will not be printed to console :(');
 }
-
+process.exit(0);
 // c. Bonus. Did you realize that JavaScript/Node.JS has three different ways
 // of declaring a function?
 
@@ -167,7 +167,7 @@ let variablesToCheck = [
 ];
 
 console.log('Num of variables in .env to check: ', variablesToCheck.length);
-
+process.exit(0);
 //process.exit(0);
 //exit();
 

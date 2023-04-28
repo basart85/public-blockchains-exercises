@@ -60,7 +60,7 @@ const getNonce = async() => {
     let nonce = await signer.getNonce();
     console.log('Your nonce is ' + nonce);
 };
-
+process.exit(0);
 // getNonce();
 
 

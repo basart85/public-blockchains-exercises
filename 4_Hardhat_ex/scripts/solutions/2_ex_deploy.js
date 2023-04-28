@@ -42,6 +42,7 @@ console.log("Ethers version:", ethers.version);
 
 return;
 
+
 // b. Hardhat uses v5 because it offers a plugin that is a wrapped version of
 // Ethers which makes things a little easier. This is available under
 // hre.ethers (require statement above).
@@ -50,7 +51,7 @@ return;
 console.log("HH Wrapped Ethers version:", hre.ethers.version);
 
 return;
-
+process.exit(0);
 // Exercise 1. Create a new Solidity contract.
 //////////////////////////////////////////////
 
